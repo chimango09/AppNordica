@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📦</text></svg>">
+    <title>Studio 3D Master - Vanilla Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Outfit', 'sans-serif'] },
+            colors: {
+              nordic: {
+                black: '#0a0a0c',
+                gray: '#16171d',
+                lightGray: '#22232a',
+                bronze: '#d4af37',
+                bronzeLight: '#e5c494',
+                bronzeDark: '#8a6d1a',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background-color: #0a0a0c; color: #e2e8f0; margin: 0; overflow-x: hidden; }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #0a0a0c; }
+      ::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 10px; }
+      .bronze-glow { box-shadow: 0 0 30px rgba(212, 175, 55, 0.1); }
+      .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: #d4af37; border-radius: 10px; }
+      @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .animate-fade { animation: fade-in 0.4s ease-out forwards; }
+      input[type=number]::-webkit-inner-spin-button { display: none; }
+      .loading-spinner { border-4 border-white/10 border-t-nordic-bronze rounded-full w-12 h-12 animate-spin; }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "lucide": "https://esm.sh/lucide@0.475.0",
+        "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.48.1"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="index.js"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

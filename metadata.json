@@ -1,0 +1,6 @@
+
+{
+  "name": "3D Print Master - Vanilla JS Engine",
+  "description": "Gestión de taller 3D sin dependencias de frameworks, optimizado para velocidad y portabilidad.",
+  "requestFramePermissions": []
+}
